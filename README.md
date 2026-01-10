@@ -1,5 +1,8 @@
 # FFmpeg to PATH Installer
 
+<img width="616" height="538" alt="!info FFmpeg installer (1)" src="https://github.com/user-attachments/assets/51ee8575-8178-4df6-99d3-d40fe92c9c6a" />
+
+
 ## Explanation
 
 A lot of programs, python scripts and such that deal with audio files or video files often need 'FFmpeg' to edit the files and do cool automations with them. 
@@ -9,6 +12,10 @@ FFmpeg itself is a collection of code packed into a compiled program that does t
 A lot of my own programs use FFmpeg if they deal with audio or video files. The problem is that trying to bundle FFmpeg with my programs causes them to balloon to 100MB or more in filesize, taking up space and making the program slower and more bothersome to compile into an exe. So instead, I made this:
 
 A simple GUI application that automatically installs FFmpeg to Windows PATH for easy access by other applications.
+
+<img width="909" height="541" alt="!info FFmpeg installer Source (1)" src="https://github.com/user-attachments/assets/8d8c6c5a-022b-4337-a044-b8623db5987d" />
+
+*(its getting it automatically from here, whichever is the latest version)*
 
 ## Features
 
