@@ -5,7 +5,7 @@ REM Install dependencies
 pip install -r requirements.txt
 
 REM Build executable with PyInstaller
-pyinstaller --onefile --windowed --icon=ffmpeg.ico --name="FFmpeg_to_PATH_Installer" ffmpeg_installer.py
+pyinstaller --onefile --windowed --icon=ffmpeg.ico --add-data "ffmpeg.ico;." --name="FFmpeg_to_PATH_Installer" ffmpeg_installer.py
 
 echo Build complete! FFmpeg_PATH_Installer.exe created.
 echo.

@@ -19,30 +19,32 @@ A simple GUI application that automatically installs FFmpeg to Windows PATH for 
 
 ## Features
 
-- Downloads official FFmpeg builds automatically.
+- Downloads the latest official FFmpeg build automatically.
 - Installs to C:\ffmpeg.
-- Adds FFmpeg to Windows PATH environment variable.
-- Simple GUI interface for laypeople - everything handled with a single click.
-- One-click installation verification, allowing to check if you already have it.
+- Adds C:\ffmpeg\bin to the front of your Windows user PATH, so it takes priority over any older FFmpeg already on your system.
+- Detects and warns if another FFmpeg installation is present that could cause conflicts.
+- Verifies the installed version after install and warns if it is outdated.
+- Simple GUI interface for laypeople — everything handled with a single click.
+- One-click installation check showing exactly which FFmpeg is active and where it is located.
 - Easy uninstall functionality included too.
-- Supports Windows 7-through-11-and-above.
+- Supports Windows 10 and above.
 
 ## Usage
 
 1. Run `FFmpeg_PATH_Installer.exe`
-2. Click "Install FFmpeg to PATH" 
+2. Click "Install FFmpeg to PATH"
 3. Wait for download and installation to complete
-4. Restart applications that need FFmpeg
+4. Restart any applications that need FFmpeg
 5. Use "Check Installation" to verify it's working
 
 ## What it does
 
-- It downloads FFmpeg from https://www.gyan.dev/ffmpeg/builds/
-- It extracts to C:\ffmpeg
-- It adds C:\ffmpeg\bin to Windows PATH
-- It makes FFmpeg available system-wide
+- Downloads FFmpeg from https://www.gyan.dev/ffmpeg/builds/
+- Extracts and installs to C:\ffmpeg
+- Adds C:\ffmpeg\bin to your Windows user PATH (placed first, so it takes priority over other versions)
+- Makes FFmpeg available to any application that needs audio or video processing
 
-This allows my 'ElevenLabs Batch Transcriber' and many other applications to use FFmpeg without bundling it. Saves a lot of hard drive space and makes for smaller downloads, yay.
+This allows many applications to use FFmpeg without bundling it. Saves a lot of hard drive space and makes for smaller downloads, yay.
 (Find my other cool programs here: https://reactorcore.itch.io/)
 
 
